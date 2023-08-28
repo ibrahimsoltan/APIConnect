@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-app.use(cors({ credentials: true, origin: ["http://localhost:5173"] }));
+app.use(cors());
 app.use(express.json());
 
 const DbURI = 'mongodb+srv://ibrahim:ibrahim1234@student.lmygtpz.mongodb.net/APIDB?retryWrites=true&w=majority';
